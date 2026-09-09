@@ -39,14 +39,3 @@ python scripts/04_advanced_analysis.py
 ```
 
 `master_orders_enriched.csv` is the source of truth for the report metrics, charts, and dashboard.
-
-## Data handling rules
-
-- Keep the original CSV files downloaded from the shared Drive folder unchanged in `data/raw/`.
-- Do not commit large CSV files to GitHub unless Git LFS is enabled.
-- Share raw and enriched data through an evaluator-accessible Google Drive folder for final submission.
-- Verify that the shared Drive link opens without requiring access approval before submitting.
-
-## Basic validation
-
-After running the pipeline, confirm that the enriched dataset contains one row per `order_id` and approximately 98,666 rows. The difference from the raw order count occurs because fulfilment analysis requires orders with usable item and delivery information.
