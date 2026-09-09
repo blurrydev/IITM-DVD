@@ -25,9 +25,15 @@ The analysis focuses on five decision questions:
 ## Repository structure
 
 ```text
-project-repo/
+IITM-DVD/
 |
 |-- README.md
+|
+|-- backend/
+|
+|-- frontend/
+|
+|-- dashboard/
 |
 |-- data/
 |   |-- raw/                         # Original 9 CSV files
@@ -40,13 +46,13 @@ project-repo/
 |   |-- 03_feature_engineering.py
 |   `-- 04_advanced_analysis.py
 |
-|-- dashboard/
-|   `-- app.py                       # Optional Streamlit or Dash source
-|
 |-- report/
+|   |-- DVD_ Team_001_Technical Report.docx
+|   |-- DVD_ Team_001_Technical Report.md
 |   |-- Team_Report_EDA_Findings.docx
-|   |-- Visualization_Dashboard_Plan.docx
-|   `-- insights_summary.md
+|   |-- Team_Report_EDA_Findings.md
+|   |-- Visualization_Dashboard_Plan .docx
+|   `-- Visualization_Dashboard_Plan (1).md
 |
 |-- presentation/
 |   |-- presentation_script.md
@@ -77,8 +83,6 @@ python -m venv .venv
 pip install pandas numpy matplotlib seaborn plotly jupyter
 ```
 
-Install `streamlit` or `dash` only if the repository includes the corresponding dashboard application.
-
 ### 2. Add the source files
 
 Place the original Olist CSV files in `data/raw/`. Do not commit large raw or enriched datasets to GitHub unless Git LFS is configured. Share these files through the team Google Drive folder and add the public evaluator link below.
@@ -94,15 +98,11 @@ python scripts/04_advanced_analysis.py
 
 The final source of truth for charts and dashboard metrics is `data/master_orders_enriched.csv`.
 
-### 4. Run the dashboard
+### 4. Access the interactive dashboard
 
-If a Streamlit dashboard is included:
+The interactive management dashboard is hosted live on Vercel:
 
-```bash
-streamlit run dashboard/app.py
-```
-
-Live dashboard: [Marketplace Delivery and Satisfaction Intelligence](https://dvd-project-fawn.vercel.app)
+🔗 **[Marketplace Delivery and Satisfaction Intelligence](https://dvd-project-fawn.vercel.app)**
 
 ## Reproducibility and data preparation
 
@@ -125,11 +125,11 @@ Add public, evaluator-accessible links before submission and verify them in an i
 | Artefact | Link |
 |---|---|
 | Live dashboard | [https://dvd-project-fawn.vercel.app](https://dvd-project-fawn.vercel.app) |
-| GitHub repository | `ADD_PUBLIC_GITHUB_LINK` |
-| Google Drive dataset folder | `ADD_PUBLIC_DRIVE_LINK` |
+| GitHub repository | [https://github.com/blurrydev/IITM-DVD](https://github.com/blurrydev/IITM-DVD) |
+| Google Drive dataset folder | [Google Drive Folder](https://drive.google.com/drive/folders/1CZemi5Ws71fA9cniJ_gN4Kcjk8fP45F_?usp=drive_link) |
+| Final technical report | [report/DVD_ Team_001_Technical Report.md](report/DVD_%20Team_001_Technical%20Report.md) |
 | Kaggle notebooks | `ADD_PUBLIC_KAGGLE_LINK` |
 | Overleaf project or final PDF | `ADD_PUBLIC_OVERLEAF_OR_PDF_LINK` |
-| Final technical report | `ADD_PUBLIC_REPORT_LINK` |
 | Final presentation | `ADD_PUBLIC_PRESENTATION_LINK` |
 
 ## Tools used
