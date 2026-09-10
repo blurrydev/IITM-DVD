@@ -1,0 +1,21 @@
+# Python / FastAPI
+.venv/
+__pycache__/
+*.pyc
+backend/cache/
+
+# Large Raw Data
+data/raw/*.csv
+
+# Node / Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/*.tsbuildinfo
+frontend/.env.local
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
+.claude/

@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #F8FAFC;
+    --card-bg: #FFFFFF;
+    --card-border: #E2E8F0;
+  }
+}
+
+body {
+  background-color: #F8FAFC;
+  color: #0F172A;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  min-height: 100vh;
+}
+
+/* Custom sleek scrollbar for light mode */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+.glass-panel {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05);
+}
+
+.glass-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 2px 10px -1px rgba(15, 23, 42, 0.04);
+}
+
+.glow-blue {
+  box-shadow: 0 4px 25px -4px rgba(37, 99, 235, 0.08);
+}
+
+.glow-purple {
+  box-shadow: 0 4px 25px -4px rgba(147, 51, 234, 0.08);
+}
+
+.glow-amber {
+  box-shadow: 0 4px 25px -4px rgba(217, 119, 6, 0.08);
+}
