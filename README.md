@@ -98,11 +98,35 @@ python scripts/04_advanced_analysis.py
 
 The final source of truth for charts and dashboard metrics is `data/master_orders_enriched.csv`.
 
-### 4. Access the interactive dashboard
+### 4. Access the interactive dashboard & live API
 
-The interactive management dashboard is hosted live on Vercel:
+The interactive management dashboard and FastAPI backend are deployed live:
 
-🔗 **[Marketplace Delivery and Satisfaction Intelligence](https://dvd-project-fawn.vercel.app)**
+- 🔗 **Live Dashboard (Vercel)**: [https://iitm-dvd-intelligence.vercel.app](https://iitm-dvd-intelligence.vercel.app)
+- ⚡️ **Live FastAPI Backend**: [https://iitm-dvd-backend.fastapicloud.dev](https://iitm-dvd-backend.fastapicloud.dev)
+- 📚 **Swagger API Docs**: [https://iitm-dvd-backend.fastapicloud.dev/docs](https://iitm-dvd-backend.fastapicloud.dev/docs)
+
+### 5. Running local development servers
+
+To run both backend and frontend locally connected to live data:
+
+```bash
+# Terminal 1: FastAPI Backend (Port 8000)
+cd backend
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+uvicorn app.main:app --reload --port 8000
+```
+
+```bash
+# Terminal 2: Next.js Frontend (Port 3000)
+cd frontend
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Reproducibility and data preparation
 
@@ -124,11 +148,11 @@ Add public, evaluator-accessible links before submission and verify them in an i
 
 | Artefact | Link |
 |---|---|
-| Live dashboard | [https://dvd-project-fawn.vercel.app](https://dvd-project-fawn.vercel.app) |
+| Live dashboard | [https://iitm-dvd-intelligence.vercel.app](https://iitm-dvd-intelligence.vercel.app) |
+| Live FastAPI Backend | [https://iitm-dvd-backend.fastapicloud.dev](https://iitm-dvd-backend.fastapicloud.dev) |
 | GitHub repository | [https://github.com/blurrydev/IITM-DVD](https://github.com/blurrydev/IITM-DVD) |
 | Google Drive dataset folder | [Google Drive Folder](https://drive.google.com/drive/folders/1CZemi5Ws71fA9cniJ_gN4Kcjk8fP45F_?usp=drive_link) |
 | Final technical report | [report/DVD_ Team_001_Technical Report.md](report/DVD_%20Team_001_Technical%20Report.md) |
-| Overleaf project or final PDF | `ADD_PUBLIC_OVERLEAF_OR_PDF_LINK` |
 | Final presentation | https://drive.google.com/drive/folders/1TaFyAda0lBb3GN_nzA3eKT3QZiAgSCsO?usp=sharing |
 
 ## Tools used
