@@ -45,7 +45,7 @@ def _resolve_data_dir() -> Path:
     for candidate in DATA_DIR_CANDIDATES:
         if _has_dataset(candidate):
             return candidate
-    return DATA_DIR_CANDIDATES[0]  # nothing found: report the expected location
+    return BACKEND_DIR / "cache"
 
 
 DATA_DIR = _resolve_data_dir()
@@ -83,10 +83,7 @@ def funnel_dir() -> Path:
 
 def _find_subdir(prefix: str) -> Path:
     if not DATA_DIR.is_dir():
-        raise FileNotFoundError(
-            f"Dataset folder not found: {DATA_DIR}. Put the raw CSVs there (see "
-            "data/raw/readme.md) or set DATA_DIR to the folder holding them."
-        )
+        return DATA_DIR
     for child in sorted(DATA_DIR.iterdir()):
         if child.is_dir() and child.name.strip().lower().startswith(prefix):
             return child
