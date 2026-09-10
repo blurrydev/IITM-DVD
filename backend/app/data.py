@@ -112,8 +112,8 @@ def _read_cache() -> Optional[Dataset]:
         tables = {
             name: pd.read_pickle(config.CACHE_DIR / f"{name}.pkl") for name in TABLE_NAMES
         }
-    except Exception:  # corrupt or partial cache -- just rebuild
-        log.warning("Ignoring unreadable cache in %s", config.CACHE_DIR, exc_info=True)
+    except Exception as exc:  # corrupt or partial cache -- just rebuild
+        log.warning("Ignoring unreadable cache in %s due to error: %s", config.CACHE_DIR, exc)
         return None
     return Dataset(
         built_at=datetime.fromisoformat(meta["built_at"]), from_cache=True, **tables
