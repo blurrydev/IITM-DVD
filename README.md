@@ -128,7 +128,6 @@ Add public, evaluator-accessible links before submission and verify them in an i
 | GitHub repository | [https://github.com/blurrydev/IITM-DVD](https://github.com/blurrydev/IITM-DVD) |
 | Google Drive dataset folder | [Google Drive Folder](https://drive.google.com/drive/folders/1CZemi5Ws71fA9cniJ_gN4Kcjk8fP45F_?usp=drive_link) |
 | Final technical report | [report/DVD_ Team_001_Technical Report.md](report/DVD_%20Team_001_Technical%20Report.md) |
-| Kaggle notebooks | `ADD_PUBLIC_KAGGLE_LINK` |
 | Overleaf project or final PDF | `ADD_PUBLIC_OVERLEAF_OR_PDF_LINK` |
 | Final presentation | `ADD_PUBLIC_PRESENTATION_LINK` |
 
