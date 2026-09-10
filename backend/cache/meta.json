@@ -1,0 +1,11 @@
+{
+  "cache_version": 1,
+  "built_at": "2026-09-10T14:21:56.278512+00:00",
+  "row_counts": {
+    "orders": 99441,
+    "order_sellers": 97819,
+    "items": 110197,
+    "reviews": 40977,
+    "funnel": 842
+  }
+}

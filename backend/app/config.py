@@ -19,6 +19,8 @@ PROJECT_ROOT = BACKEND_DIR.parent
 # Where the raw CSVs may live, in priority order. `data/raw` is this repo's layout
 # (see data/raw/readme.md); the others cover the shared-folder checkouts.
 DATA_DIR_CANDIDATES = (
+    BACKEND_DIR / "data" / "raw",
+    BACKEND_DIR / "data",
     PROJECT_ROOT / "data" / "raw",
     PROJECT_ROOT / "data",
     PROJECT_ROOT / "dvd-project-main" / "Project Dataset",
