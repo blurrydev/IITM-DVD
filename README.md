@@ -102,7 +102,7 @@ The final source of truth for charts and dashboard metrics is `data/master_order
 
 The interactive management dashboard and FastAPI backend are deployed live:
 
-- 🔗 **Live Dashboard (Vercel)**: [https://iitm-dvd-intelligence.vercel.app](https://iitm-dvd-intelligence.vercel.app)
+- 🔗 **Live Dashboard (Vercel)**: [https://frontend-nu-six-8djon7b1yw.vercel.app/]
 - ⚡️ **Live FastAPI Backend**: [https://iitm-dvd-backend.fastapicloud.dev](https://iitm-dvd-backend.fastapicloud.dev)
 - 📚 **Swagger API Docs**: [https://iitm-dvd-backend.fastapicloud.dev/docs](https://iitm-dvd-backend.fastapicloud.dev/docs)
 
